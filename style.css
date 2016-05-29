@@ -1,0 +1,338 @@
+body {
+	background:#f4f4f4;
+	/*background:#ffffff;*/
+}
+
+#page {
+	width:1000px;
+	margin: 0 auto;
+	border-spacing: 4px solid #ffffff;
+	box-shadow: 0 8px 8px 5px #e6e6e6;
+	background-color: #ffffff;
+	border-spacing: 4px solid #f2f2f2;
+}
+
+/* Menu Navigasi CSS3 =============================================================== */
+/* Navigasi Beranda, Tentang Kami, Berita =============================================================== */
+nav {
+	font-family: sans-serif;
+   background-color: #ffffff;
+   color: #888;
+   display: block;
+   overflow: hidden;
+   width: 100%; 
+}
+
+nav ul {
+   margin: 0;
+   padding: 0;
+   background-color: #ed1b24;
+}
+
+/*Menampilkan Navigasi kesamping*/
+nav ul li {
+   display: inline-block;
+   list-style-type: none;
+}
+
+nav > ul > li > a > .caret,
+nav > ul > li > div ul > li > a > .caret {
+    border-top: 4px solid #aaa;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    vertical-align: middle;
+}
+	  
+nav > ul > li > div ul > li > a > .caret {
+	border-bottom: 4px solid transparent;
+	border-top: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-left: 4px solid #f2f2f2;
+	margin: 0 0 0 8px;
+}
+
+nav > ul > li > a {
+    color: #ffffff;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: rgb( 40, 44, 47 );
+}
+
+nav > ul > li:hover > a {
+    color: rgb( 255, 255, 255 );
+}
+
+nav > ul > li:hover > a > .caret {
+    border-top-color: rgb( 255, 255, 255 );
+}
+		
+nav > ul > li > div ul > li:hover > a > .caret {
+	border-left-color: rgb(255,255,255);
+}
+      
+nav > ul > li > div,
+nav > ul > li > div ul > li > div {
+    background-color: rgb( 40, 44, 47 );
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    display: none;
+    margin: 0;
+    position: absolute;
+    width: 250px;
+    visibility: hidden;
+}
+	  
+nav > ul > li > div ul > li > div {
+	background-color: rgb( 40, 44, 47 );
+	border-radius: 0 4px 4px 4px;
+	box-shadow: inset 2px 0 5px rgba(0,0,0,.15);
+	margin-top: -42px;
+	right: -250px;
+}
+
+nav > ul > li:hover > div,
+nav > ul > li > div ul > li:hover > div 
+{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav > ul > li > div ul > li,
+nav > ul > li > div ul > li > div ul > li {
+    display: block;
+	position: relative;
+}
+
+nav > ul > li > div ul > li > a,
+nav > ul > li > div ul > li > div ul > li > a {
+    color: #fff;
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+nav > ul > li > div ul > li:hover > a {
+    background-color: rgba( 255, 255, 255, 0.1);
+}
+
+/* Header ============================================================================== */
+
+header {
+	background:#000;
+}
+
+header img {
+	width:1000px;
+}
+
+/* Section Content ====================================================================== */
+
+section {
+	width: 650px;
+	float:left;
+}
+
+section article {
+	font-family: sans-serif;
+	margin: 0px 20px 20px 20px; 
+}
+
+section article h1 {
+	font-size:19px;
+	padding:6px;
+	box-shadow:  3px 3px 3px #e6e6e6;
+}
+
+section article i {
+	color:red;
+}
+
+section article b {
+	color:blue;
+	float:right;
+	font-weight: normal;
+}
+
+section article img {
+	float:left;
+	margin-right:10px;
+}
+
+section article p {
+	text-align:justify;
+}
+
+/* Komentar ============================================================================== */
+
+.komentar{
+	padding: 5px; 
+	border-radius: 5px; 
+	border: 
+	1px solid; 
+	border-image: none;
+	margin-left: 
+	15px; 
+	margin-bottom: 5px;
+}
+
+.komentar i {
+	color:red;
+}
+
+.komentar b {
+	color:blue;
+	float:right;
+}
+
+.komen{
+	style="padding: 5px; 
+	border-radius: 5px;
+	border-image: none; 
+	margin-left: 15px; 
+	margin-bottom: 5px;
+}
+
+
+/* Sidebar Kanan ============================================================================== */
+aside {
+	font-family: sans-serif;
+	float:right;
+	width:350px;
+	padding-top:20px;
+}
+
+input[type=text], input[type=date], input[type=email], input[type=password], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 6px 0px 6px 9px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 6px 0px 6px 9px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+aside h2 {
+	margin:15px 15px 0px 15px;
+	background:#ed1b24;
+	color:#fff;
+	padding:7px;
+	font-size:18px;	
+	border-top:4px solid #2a2524;
+}
+
+aside a {
+	text-decoration:none;
+}
+
+aside a:hover {
+	color:red;
+}
+
+aside th{
+	color:#ffffff;
+}
+
+.button {
+	background-color:#ed1b24;
+	width:86%;
+	padding:5px;
+	margin:3px 0px 0px 20px;
+	text-align:left;
+	text-indent:10px;
+}
+
+/* Footer =========================================================================================== */
+footer {
+	/*color:#fff;*/
+	/*background:#ed1b24;*/
+	font-family: sans-serif;
+	padding: 10px;
+	border-top:4px solid #ed1b24;
+	text-align:	center;
+}
+
+}
+footer p{
+	text-align:	center;
+}
+
+
+/* ketika di akses oleh browser dengan lebar minimalnya 1200px */
+@media (min-width: 1200px) {
+
+}
+ 
+/* ketika di akses oleh browser dengan lebar minimal 980px, dan maksimal 1024 */
+@media (max-width: 1024px) {
+	 #page{
+	  width:960px; 
+	  height:auto; 
+	  margin:0 auto;
+	 }
+	  
+	 section{
+	  width:700px; height:400px; margin-bottom:10px;
+	 }
+
+	 aside{
+	  float:none; width:auto; border:1px solid #777; height:auto;
+	 }
+
+	 .search{
+		width:96%;
+		margin:0px 10px 0px 15px;
+	 }
+
+	 header {
+		background:#000;
+	}
+
+	 header img {
+		width:100%;
+	}
+}
+ 
+/* ketika di akses oleh browser dengan lebar maksimal 720 */
+@media (max-width: 720px) {
+	 #page{
+	  width:100%; height:auto; margin:0 auto;
+	 }
+	  
+	 section{
+	  width:auto; border:1px solid #555; height:460px;
+	 }
+	 
+	 aside{
+	  float:none; width:auto; border:1px solid #777; height:auto;
+	 }
+
+	 .search{
+		width:90%;
+		margin:0px 10px 0px 15px;
+	 }
+
+	 header {
+		background:#000;
+	}
+
+	 header img {
+		width:100%;
+	}
+}
