@@ -53,7 +53,11 @@
 			  	</div>
 			  	<?php
 			  }
-			  if($_SESSION[id_user] != ''){
+			  $queryks = mysqL_query("SELECT us.status_user
+			  						FROM user_donor us
+			  						WHERE us.id_user_donor='$_SESSION[id_user]'");
+			  $ks = mysql_fetch_array($queryks);
+			  if($_SESSION[id_user] != '' && $ks[status_user] == 'aktif'){
 			  ?>
 			  <div class="komen">	
 				  <form action="" method="POST" accept-charset="utf-8">
