@@ -1,4 +1,4 @@
-body {
+	body {
 	background:#f4f4f4;
 	/*background:#ffffff;*/
 }
@@ -175,6 +175,7 @@ section article p {
 /* Komentar ============================================================================== */
 
 .komentar{
+	font-family:sans-serif;
 	padding: 5px; 
 	border-radius: 5px; 
 	border: 
@@ -250,87 +251,23 @@ aside th{
 }
 
 .button {
-	background-color:#ed1b24;
+	/*background-color:#ed1b24;*/
 	width:86%;
 	padding:5px;
 	margin:3px 0px 0px 20px;
 	text-align:left;
 	text-indent:10px;
+	pointer-events: none;
 }
 
 /* Footer =========================================================================================== */
 footer {
+	/*color:#fff;*/
+	/*background:#ed1b24;*/
 	font-family: sans-serif;
 	padding: 10px;
 	border-top:4px solid #ed1b24;
 	text-align:	center;
 }
 
-}
-footer p{
-	text-align:	center;
-}
-
-
-/* ketika di akses oleh browser dengan lebar minimalnya 1200px */
-@media (min-width: 1200px) {
-
-}
- 
-/* ketika di akses oleh browser dengan lebar minimal 980px, dan maksimal 1024 */
-@media (max-width: 1024px) {
-	 #page{
-	  width:960px; 
-	  height:auto; 
-	  margin:0 auto;
-	 }
-	  
-	 section{
-	  width:700px; height:400px; margin-bottom:10px;
-	 }
-
-	 aside{
-	  float:none; width:auto; border:1px solid #777; height:auto;
-	 }
-
-	 .search{
-		width:96%;
-		margin:0px 10px 0px 15px;
-	 }
-
-	 header {
-		background:#000;
-	}
-
-	 header img {
-		width:100%;
-	}
-}
- 
-/* ketika di akses oleh browser dengan lebar maksimal 720 */
-@media (max-width: 720px) {
-	 #page{
-	  width:100%; height:auto; margin:0 auto;
-	 }
-	  
-	 section{
-	  width:auto; border:1px solid #555; height:460px;
-	 }
-	 
-	 aside{
-	  float:none; width:auto; border:1px solid #777; height:auto;
-	 }
-
-	 .search{
-		width:90%;
-		margin:0px 10px 0px 15px;
-	 }
-
-	 header {
-		background:#000;
-	}
-
-	 header img {
-		width:100%;
-	}
 }
