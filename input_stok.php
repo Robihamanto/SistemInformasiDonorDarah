@@ -13,7 +13,10 @@
 		echo "<script>window.alert('Sukses Tambah data Darah $_POST[b]...');
 				window.location='index.php?page=kelolastok'</script>";
 	}
-	$r = mysql_fetch_array(mysql_query("SELECT * FROM user_donor a JOIN golongan_darah b ON a.id_golongan_darah=b.id_golongan_darah where a.id_user_donor='$_GET[id]'"));
+	$r = mysql_fetch_array(mysql_query("SELECT * FROM user_donor a 
+		JOIN golongan_darah b 
+		ON a.id_golongan_darah=b.id_golongan_darah 
+		WHERE a.id_user_donor='$_GET[id]'"));
 ?>
 
 <article>
@@ -22,17 +25,17 @@
 	<table width="100%">
 		<tr><input name='a' type="hidden" value='<?php echo "$r[id_user_donor]"; ?>'>
 			<td width=120px>Nama Lengkap</td> 	<td><input type='text' value='<?php echo "$r[nama_lengkap]"; ?>' style='width:70%; background:#e3e3e3; border:1px solid #cecece' readonly='on'>
-													<button><a href='index.php?page=caripendonor'>Cari</a></button></td>
+				<button><a href='index.php?page=caripendonor'>Cari</a></button></td>
 		</tr>
 		<tr>
 			<td>Gol. Darah</td> 	<td><input type='text' name='c' style='width:30%; background:#e3e3e3; border:1px solid #cecece' value='<?php echo "$r[nama_golongan_darah]"; ?>' required></td>
 		</tr>
 		<tr>
-			<td>Status</td> 	<td><select name='b'>
+			<td>Status</td> <td><select name='b'>
 										<option value='masuk'>- Pilih Status -</option>
 										<option value='masuk'>Darah Masuk</option>
-										<option value='masuk'>Darah Keluar</option>
-									</select>
+										<option value='keluar'>Darah Keluar</option>
+							</select>
 			</td>
 		</tr>
 		<tr>
