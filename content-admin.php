@@ -239,7 +239,7 @@
 			  		<th>No</th>
 			  		<th>Nama Lengkap</th>
 			  		<th>Isi Pesan</th>
-			  		<th></th>
+			  		<th>Aksi</th>
 			  	</tr>";
 			$no = 1;
 			$query = mysql_query("SELECT * FROM hubungi_kami ORDER BY id_hubungi_kami");
@@ -248,7 +248,7 @@
 							<td valign=top>$no</td>
 							<td width='140px' align=center valign=top>$r[nama_lengkap]</td>
 							<td>$r[isi_pesan]</td>
-							<td valign=top><a href='index.php?page=kelolapesanmasuk&id=$r[id_hubungi_kami]'>x</a></td>
+							<td valign=top><a href='index.php?page=kelolapesanmasuk&id=$r[id_hubungi_kami]'>Hapus</a></td>
 					  </tr>";
 				$no++;
 			}
